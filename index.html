@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive-web</title>
+    <!--CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto">
     <link rel="stylesheet" href="styles.css" />
+    <!--JS-->
+    <script src="https://kit.fontawesome.com/2d7beb3640.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="body_pr">
@@ -16,16 +19,21 @@
             <p class="logo">
                 Portfolio
             </p>
-            <nav>
+            <nav id="navbar">
                 <a href="#mi-prog">Quien soy</a>
-                <a href="#mis-programas">Mis programas</a>
+                <a href="#projects">Mis programas</a>
                 <a href="#caracteristicas">Caracteristicas</a>
                 <a href="#contactame">Contactame</a>
             </nav>
+            <div class="social">
+                <a id="profile-link" href="https://github.com/GerstnerJuanI" target="_blank" rel="github" style="background-color: #161b22;"><i class="fa-brands fa-github" name="logo-github" style="color: #fff;"></i></a>
+                <a id="profile-link-2" href="https://www.linkedin.com/in/jigerstner/" target="_blank" rel="linkedin" style="background-color: #0a66c2 ;"><i class="fa-brands fa-linkedin" name="logo-linkedin" style="color: #ffffff ;"></i></a>
+                <a id="profile-link-3" href="https://www.freecodecamp.org/GerstnerJuanI" target="_blank" rel="freecodecamp" style="background-color: #0a0a23;"><i class="fa-brands fa-free-code-camp" name="logo-freecodecamp" style="color: #ffffff ;"></i></a>
+            </div>
         </div>
     </header>
     <main>
-        <section id="hero">
+        <section id="welcome-section">
             <h1>Mi Portfolio<br> Explorá:</h1>
             <button>Ver</button>
         </section>
@@ -42,30 +50,30 @@
             </div>
         </section>
 
-        <section id="mis-programas">
+        <section id="projects">
             <div class="container">
                 <h2>Mis Programas</h2>
                 <div class="cartas">
-                    <div class="carta">
+                    <div class="carta project-tile">
                         <h3>Javascript</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates eveniet nemo voluptate
                             officiis blanditiis quia, sapiente nulla pariatur totam hic accusantium earum aperiam, optio
                             voluptas cum. Quisquam qui reprehenderit sed.</p>
-                        <button class="btn-info">+info</button>
+                        <a href="http://" class="boton" target="_blank" rel="Javascript">Ir</a>
                     </div>
-                    <div class="carta">
+                    <div class="carta project-tile">
                         <h3>Java</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates eveniet nemo voluptate
                             officiis blanditiis quia, sapiente nulla pariatur totam hic accusantium earum aperiam, optio
                             voluptas cum. Quisquam qui reprehenderit sed.</p>
-                        <button class="btn-info">+info</button>
+                            <a href="http://" class="boton" target="_blank" rel="Java">Ir</a>
                     </div>
-                    <div class="carta">
+                    <div class="carta project-tile">
                         <h3>Laravel</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates eveniet nemo voluptate
                             officiis blanditiis quia, sapiente nulla pariatur totam hic accusantium earum aperiam, optio
                             voluptas cum. Quisquam qui reprehenderit sed.</p>
-                        <button class="btn-info">+info</button>
+                            <a href="http://" class="boton" target="_blank" rel="Laravel">Ir</a>
                     </div>
                 </div>
             </div>

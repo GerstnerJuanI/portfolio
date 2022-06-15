@@ -40,6 +40,23 @@ button:hover{
 .btn-info{
     font-size: 1.1em;
 }
+
+.boton{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    color: white;
+    background-color:rgb(0, 141, 24);
+    font-size: 1.1em;
+}
+.boton:hover{
+    background-color: rgb(10, 85, 0);
+}
+
 .container{
     max-width: 1200px;
     margin: auto;
@@ -83,7 +100,7 @@ header a{
 header a:hover{
     color:rgb(10, 85, 0);
 }
-#hero{
+#welcome-section{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +117,7 @@ header a:hover{
     background-size: cover;
     background-position: center center;
 }
-#hero h1{
+#welcome-section h1{
     color: white;
 }
 #mi-prog{
@@ -113,26 +130,26 @@ header a:hover{
 
 }
 
-#mis-programas{
+#projects{
     background-color: rgb(40,40,40);
     color: white;
     text-align: center;
 
 }
 
-#mis-programas .container{
+#projects .container{
     padding: 150px 12px;
 }
 
-#mis-programas h2{
+#projects h2{
     margin-top: 0;
 }
 
-#mis-programas p{
+#projects p{
     display: none;
 }
 
-#mis-programas .carta{
+#projects .carta{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -226,6 +243,35 @@ footer .container{
     font-size: 3vw;
 }
 
+.social{
+    width: 200px;
+    display: flex;
+    padding: 10px;
+    border-radius:10px;
+    /* background: #ecf2ff; */
+}
+.social >a{
+    width: 25%;
+    font-size: 2rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #fff;
+    margin:10px;
+    transition: 0.4s;
+    box-shadow:
+        rgb(204, 219, 232)
+        3px 3px 6px 0px,
+        rgba(255,255,255)
+        -3px -3px 6px 1px;
+}
+.social >a:hover{
+    transform:translateY(-10px);
+}
 @media (min-width: 720px){
     header{
         position:fixed;
@@ -241,7 +287,7 @@ footer .container{
         padding-right: 20px ;
     }
 
-    #hero{
+    #welcome-section{
         height: 100vh;
     }
 
@@ -275,21 +321,21 @@ footer .container{
         width: 300px;
     }
 
-    #mis-programas .container{
+    #projects .container{
         font-size: small;
         
     }
-    #mis-programas .cartas{
+    #projects .cartas{
         display: flex;
         justify-content: center;
         
         
     }
-    #mis-programas .carta{
+    #projects .carta{
         padding: 15px;
         
     }
-    #mis-programas p{
+    #projects p{
         display: block;
         margin-bottom: 30px;
         background-image: linear-gradient(
